@@ -104,13 +104,6 @@ body {
   object-fit: contain;
   /* width: 5rem; */
 }
-.waves {
-  position: absolute;
-  width: 100%;
-  bottom: -3%;
-  left: 0;
-  display: none;
-}
 
 @media only screen and (max-width: 1000px) {
   .imageDis {
@@ -121,10 +114,6 @@ body {
   }
 }
 @media only screen and (max-width: 850px) {
-  /* .imageDis {
-    display: none;
-  } */
-
   .mainHead h1 {
     font-size: 6rem;
   }
@@ -146,9 +135,6 @@ body {
   }
   .mainHead {
     margin-top: 0rem;
-  }
-  .waves {
-    display: block;
   }
   .heroCont {
     margin-top: 1rem;
