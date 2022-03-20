@@ -105,6 +105,10 @@ body {
   /* width: 5rem; */
 }
 
+.video-container {
+  width: 70rem;
+}
+
 @media only screen and (max-width: 1000px) {
   .imageDis {
     height: 50vh;
@@ -139,6 +143,10 @@ body {
   .heroCont {
     margin-top: 1rem;
   }
+  .video-container {
+    width: 40rem;
+    margin-block: 5rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   .mainHead h1 {
@@ -146,5 +154,9 @@ body {
   }
   .imageDis {
     margin: 14rem 3rem 4rem 3rem;
+  }
+  .video-container {
+    width: 30rem;
+    margin-block: 5rem;
   }
 }

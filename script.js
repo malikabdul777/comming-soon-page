@@ -70,3 +70,7 @@ gsap.to(".imageDis", 1, {
   repeat: -1,
   ease: "power1.inOut",
 });
+
+const player = new Plyr("video", { captions: { active: true } });
+
+window.player = player;
