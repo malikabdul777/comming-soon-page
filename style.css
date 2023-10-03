@@ -1,50 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Condensed&display=swap");
 
+/* Resetters */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* setting default font size to 10px => 1rem =10px */
   font-family: "Poppins", sans-serif;
 }
 body {
+  height: 100vh;
   overflow: hidden;
   width: 100vw;
-  height: 100vh;
-
-  /* background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; */
 }
 .wrapper {
-  height: 100%;
-  width: 100%;
+  align-items: center;
+  background-image: linear-gradient(to right, #000428, #004e92);
   color: white;
   display: flex;
+  height: 100%;
   justify-content: space-around;
-  align-items: center;
-  position: relative;
   overflow: hidden;
-  /* flex-wrap: wrap-reverse; */
-  background-image: linear-gradient(to right, #000428, #004e92);
+  position: relative;
+  width: 100%;
 }
 .navBar {
+  left: 5%;
   position: absolute;
   top: 10%;
-  left: 5%;
 }
-/* .logo {
-  height: 4rem;
-  margin: 2rem 0 0 4rem;
-} */
 .heroCont {
-  padding: 1rem 1.5rem;
-  display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 1.5rem;
 }
 .abb {
   font-size: 1.8rem;
@@ -53,28 +45,15 @@ body {
 .mainHead {
   margin-top: 5rem;
 }
-/* .thinHead {
-  font-size: 6rem;
-  font-weight: 300;
-} */
 .mainHead h1 {
   font-size: 8rem;
   font-weight: 600;
   font-family: "Roboto Condensed", sans-serif;
 }
-/* .soonHead {
-  height: 4rem;
-  width: 4rem;
-  padding: 4rem;
-  background-image: linear-gradient(to top, #000046, #1cb5e0);
-  color: white;
-  border-radius: 50%;
-} */
 .mailTxt {
-  margin-top: 1.2rem;
-  cursor: pointer;
-  /* transition: all 0.5s ease linear; */
   color: white;
+  cursor: pointer;
+  margin-top: 1.2rem;
   text-decoration: none;
 }
 .mail {
@@ -85,30 +64,30 @@ body {
   text-decoration: none;
 }
 .imgBox {
-  height: 95%;
+  align-items: flex-end;
   background-color: white;
-  width: 95%;
   border-radius: 1.5rem;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.267);
-  overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  height: 95%;
+  overflow: hidden;
+  width: 95%;
 }
 .imageDis {
+  height: 35rem;
   margin: 13rem 3rem;
   width: 27rem;
-  height: 35rem;
 }
 .handsImg {
-  width: 100%;
   object-fit: contain;
-  /* width: 5rem; */
+  width: 100%;
 }
 
 .video-container {
   width: 70rem;
 }
 
+/* CSS for Responsive design */
 @media only screen and (max-width: 1000px) {
   .imageDis {
     height: 50vh;

@@ -2,9 +2,10 @@
 
 const mailTxt = document.querySelector(".mailTxt");
 
-let t2 = gsap.timeline();
+// GSAP Animation
+let animatonTimeline = gsap.timeline();
 
-t2
+animatonTimeline
   .from(".abb", 1, {
     y: -40,
     opacity: 0,
@@ -43,16 +44,15 @@ t1.to(".mailTxt", 1, {
   delay: 2,
 });
 
+// Hover & Click Animation for Email text
 mailTxt.addEventListener("mouseenter", () => {
   t1.pause();
-  console.log("ok");
   gsap.to(".mailTxt", {
     scale: 1.08,
   });
 });
 mailTxt.addEventListener("mouseleave", () => {
   t1.resume();
-  console.log("ok2");
   gsap.to(".mailTxt", {
     scale: 1,
   });
@@ -64,6 +64,8 @@ mailTxt.addEventListener("click", () => {
     yoyo: true,
   });
 });
+
+// Image floating animation
 gsap.to(".imageDis", 1, {
   y: -13,
   yoyo: true,
@@ -71,6 +73,7 @@ gsap.to(".imageDis", 1, {
   ease: "power1.inOut",
 });
 
-const player = new Plyr("video", { captions: { active: true } });
+// Video Player
+const videoPlayer = new Plyr("video", { captions: { active: true } });
 
-window.player = player;
+window.player = videoPlayer;
